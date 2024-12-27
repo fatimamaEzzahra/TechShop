@@ -1,0 +1,20 @@
+.container{
+ overflow-y: auto;
+ grid-area: main;
+ width: 90%;
+ margin:0 10px 20px 10px;
+}
+.back-btn{
+ width: 100px;
+ height: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 10px;
+ color: white;
+ border-radius: 15px;
+ background-color: rgb(255, 87, 87);
+}
+.modification-form label{
+ font-size: 20px;
+}

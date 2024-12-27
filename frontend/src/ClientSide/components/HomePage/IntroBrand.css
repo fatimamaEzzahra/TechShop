@@ -1,0 +1,19 @@
+.intro-container{
+ display: flex;
+ justify-content: center;
+ gap: 27px;
+ margin: 30px;
+}
+.icon-brand-intro{
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: rgb(255, 60, 60);
+}
+@media screen and (max-width:959px) {
+ .intro-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+ }
+}

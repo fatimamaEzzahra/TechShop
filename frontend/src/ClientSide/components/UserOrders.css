@@ -1,0 +1,48 @@
+/* .user-orders-container{
+
+} */
+
+.product-order-image{
+ height: 160px;
+ color: rgb(21, 104, 152);
+}
+.orders-list{
+ padding: 30px;
+}
+.orders-title{
+ height: 150px;
+ font-size: 50px;
+ font-weight: 30px;
+}
+.orders-table{
+ width: 50%;
+}
+
+.scrollable-tab{
+  max-height: 500px;
+  overflow-y: scroll;
+}
+ td .ordered-products{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+@media screen and (max-width: 720px) {
+  td .ordered-products {
+    grid-template-columns: 1fr;
+  }
+}
+
+th{
+ text-align: center;
+}
+
+/* td .ordered-products ul{
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+} */
+.order-tr td{
+ padding: 30px;
+}
+

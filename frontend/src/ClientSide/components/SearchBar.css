@@ -1,0 +1,161 @@
+/* Search bar */
+.active-border{
+ margin-top: 10px;
+ display: flex;
+ gap: 20px;
+ border: 1px solid rgb(44, 44, 44);
+ border-radius: 30px;
+ padding: 4px;
+ animation: searchIn ease-out 0.5s;
+}
+.unactive-border{
+padding-top: 20px;
+ width: 30px;
+ border: none;
+ animation: searchOut ease-out 0.75s;
+
+}
+@keyframes searchIn {
+ from{
+  border: none;
+  width: 10%;
+ }
+ to{
+ border: 1px solid rgb(44, 44, 44);
+  
+  width: 100%;
+ }
+}
+@keyframes searchOut {
+ from{
+  display: flex;
+  gap: 20px;
+  border: 1px solid rgb(44, 44, 44);
+  border-radius: 30px;
+  padding: 4px;
+  width: 100%;
+ }
+ to{
+  padding-top: 20px;
+ width: 30px;
+ border-color: transparent;
+ }
+}
+
+.try{
+ color: #71ffbd;
+ background-color: rgb(72, 252, 255);
+}
+#search{
+ width: 95%;
+
+}
+#search:focus{
+ border-color:transparent;
+ outline: none;
+}
+#searchIcon{
+ 
+ margin-top: 4px;
+ margin-left: 10px;
+ font-size: 24px;
+}
+#search::-webkit-search-cancel-button {
+color: black;
+}
+.reset-icon::before{
+ content: 'X';
+ color: gray;
+ display: none;
+}
+#search:not(:placeholder-shown) + .reset-icon{
+ display: block;
+}
+.reset-icon:focus{
+ display: flex;
+}
+.unactive-search{
+ visibility: hidden;
+}
+.active-search{
+ visibility: visible;
+}
+.unactive-results{
+ visibility: hidden;
+}
+.active-results{
+ visibility: visible;
+}
+
+.results{
+ position: absolute;
+ top: 53px;
+ right:18% ;
+ background: white;
+ height: 300px;
+ overflow-y:auto;
+ width: 270px;
+ padding: 30px;
+ box-shadow: 2px 2px 10px rgb(161, 161, 161);
+}
+@media screen and (max-width:960px ) and (min-width:761px) {
+ .results{
+  right:33% ;
+ }
+}
+@media screen and (max-width:760px) {
+ .results{
+  left:30% ;
+ }
+}
+.product-search{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ height: 70px;
+ border-radius:15px;
+ width: 100%;
+ 
+}
+.product-search:hover{
+
+ background-color: aliceblue;
+}
+.product-image-search{
+ height: 60px;
+}
+
+
+.results a {
+ display: flex;
+ align-items: center;
+ padding: 10px 0; /* Adjust padding */
+ text-decoration: none;
+ color: #333;
+}
+
+.results a:hover {
+ background-color: #f4f4f4; /* Adjust hover background color */
+}
+
+.results img {
+ width: 50px;
+ height: 50px;
+ margin-right: 10px;
+ border-radius: 50%; /* Make the image circular */
+ object-fit: cover;
+}
+
+.results p {
+ margin: 0;
+}
+
+.results .product-search {
+ padding: 10px; /* Adjust padding */
+ border-radius: 10px; /* Adjust border radius */
+ transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.results .product-search:hover {
+ background-color: #f0f0f0; /* Adjust hover background color */
+}

@@ -1,0 +1,182 @@
+.product-display{
+  margin: 20px;
+}
+.container-product{
+ display: flex;
+ align-items:center ;
+ gap: 100px;
+ margin: 30px;
+ padding: 20px;
+}
+.swiper {
+ width: auto;
+ height: auto;
+}
+
+.image-swiper{
+  width: 40%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.swiper-slide {
+ text-align: center;
+ font-size: 18px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.carousel-icon{
+  color: black;
+}
+.swiper-slide img {
+ display: block;
+ object-fit: cover;
+ width: 100%;
+ height: auto;
+}
+.info{
+  position: relative;
+  bottom: 50px;
+  gap: 40px;
+}
+.info h1{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.info .description p{
+  margin: 10px;
+  width: 70%;
+}
+.info .description  h3{
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.price {
+  margin: 20px 20px 20px 10px;
+}
+
+.price h4{
+  font-size: 25px;
+  font-weight: 600;
+}
+.addcart button{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 100px;
+  
+}
+.notAllowed{
+  cursor:not-allowed !important;
+}
+@media screen and (max-width:840px) {
+  .container-product{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0%;
+  }
+  .info .description p{
+    margin: 0px;
+    width: 100%;
+  }
+  .info h1{
+    font-size: 25px;
+  }
+  .info{
+    margin: 20px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .info .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+ 
+  .image-swiper{
+    height: 50%;
+    width: 50%;
+  }
+  
+}  
+.carousel-item {
+  transition: opacity 0.5s ease; /* Example transition property */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Example property for active item */
+}
+
+.carousel-item:not(.active) {
+  opacity: 0; /* Example property for inactive items */
+  position: absolute; /* Example: Ensure inactive items don't affect layout */
+}
+.related-products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+.related-products a{
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+}
+.related-products a h1{
+  margin: 10px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.related-product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family:   Arial, sans-serif;
+  height: 350px;
+  gap: 20px;
+  padding: 40px;
+  background-color:rgb(250, 249, 249) ;
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 5px;
+}
+.related-product-img{
+  height: 200px;
+}
+.swiper-button-next , .swiper-button-prev{
+opacity: 50%;
+
+
+}
+
+.swiper-button-next:hover , .swiper-button-prev:hover{
+  opacity: 100%;
+}

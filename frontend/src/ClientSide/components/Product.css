@@ -1,0 +1,44 @@
+.product img{
+ border-radius:2px ;
+ height: 160px;
+}
+
+.product{
+
+padding-bottom: 25px;
+ display: flex;
+ flex-direction: column;
+ height: 260px;
+ width: 200px;
+ cursor: pointer;
+ justify-content: center;
+ align-items: center;
+ border-radius:15px ; 
+ gap: 5px;
+ margin-bottom: 10px;
+}
+.product h1{
+ font-size: 18px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ max-width: 150px;
+ margin-bottom: 0px;
+}
+.product h4{
+ font-size: 17px;
+ font-weight: 400;
+}
+.product:hover{
+ box-shadow: 10px 15px 13px rgb(143, 143, 143);
+ /* border: 0.5px solid rgb(206, 203, 203); */
+ transform: translateY(-10px) ;
+ transition:box-shadow 0.5s ease;
+ transition: transform 0.5s ease;
+}
+button{
+ background-color: rgb(0, 0, 106);
+}
+.b{
+ color: rgb(0, 119, 255);
+}

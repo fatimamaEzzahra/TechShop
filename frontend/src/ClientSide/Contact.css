@@ -1,0 +1,18 @@
+.contact-info {
+display: flex;
+flex-direction: column;
+}
+@media screen and (max-width:900px ) and (min-width:500px) {
+ .contact-info {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+}
+@media screen and  (max-width:501px) {
+ .contact-info {
+  
+  justify-content: center;
+  align-items: center;
+ }
+}

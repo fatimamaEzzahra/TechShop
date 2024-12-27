@@ -1,0 +1,29 @@
+.full-name{
+ width: 100%;
+ display: flex;
+ align-items: space-around ;
+ gap: 20px;
+ padding-left: 20px;
+}
+.form-group label{
+ padding-bottom: 10px;
+}
+
+.title-card{
+ border: none !important;
+ background-color: rgb(25, 151, 255) !important;
+}
+.title-card h4{
+ font-size: 29px;
+ color: rgb(255, 255, 255);
+
+}
+.total-modal{
+ font-weight: 600;
+ font-size: 29px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: rgb(0, 56, 101);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}

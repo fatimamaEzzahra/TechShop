@@ -1,0 +1,116 @@
+/* Cart.css */
+.loading-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh; 
+}
+
+.loading {
+ width: 4rem; 
+ height: 4rem; 
+}
+
+.container-table{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ margin-top: 100px;
+ font-size: 18px;
+ 
+}
+.container-table table tbody tr td{
+  padding-right: 20px;
+ padding-left: 30px;
+ padding-bottom:10px;
+ padding-top: 10px;
+}
+.trash{
+  color: rgb(255, 38, 38);
+  cursor: pointer;
+}
+.trash:hover{
+  font-size: 25px;
+}
+.product-info Link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container-table table thead  th{
+ padding: 24px;
+}
+.checkout {
+  padding: 10px;
+  width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 50px  0px 50px 0px ;
+font-weight: 500;
+height: 200px;
+box-shadow: -10px 15px  20px rgb(196, 192, 192);
+border-radius: 10px;
+}
+.total{
+display: flex;
+gap: 15px;
+font-size: 23px;
+} 
+.checkout button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(100, 170, 255);
+  font-size: larger;
+  cursor: pointer;
+  border: none;
+}
+.vide{
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(70, 109, 131);
+  font-family:  'Trebuchet MS', sans-serif;
+}
+.image-product{
+ height: 100px;
+ width: 100px;
+}
+@media screen and (max-width:772px){
+  .checkout {
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+  .product-info{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:455px){
+  .checkout {
+    width: 80%;
+  }
+}
+.try{
+  color: rgb(46, 255, 126);
+}
+.qty-btn{
+  height: 30px;
+  width: 24px;
+  background-color: rgb(204, 228, 248);
+  border-radius: 3px;
+  margin: 10px;
+  text-align: center;
+}

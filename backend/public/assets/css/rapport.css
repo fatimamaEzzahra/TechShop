@@ -1,0 +1,35 @@
+body{
+ padding-top:10px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+   h1 {
+       height:50px;
+       padding-left:200px;
+       padding-top: 10px;
+       background-color:rgb(21, 104, 152);
+       color:white;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+   }
+   h4{
+       height:50px;
+       padding-left:200px;
+       padding-top: 40px;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+   }
+   .info-group{
+       display: flex;
+       flex-direction:row;
+   }
+   .infos{
+       width:100%;
+       display: flex;
+       justify-content:center;
+       align-items:center;
+   }
+   .total{
+    padding-left:500px
+   }

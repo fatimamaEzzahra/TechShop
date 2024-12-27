@@ -1,0 +1,20 @@
+.list-container{
+ margin-top: 60px;
+}
+.id-cell > div{
+ width: 30px;
+ flex-grow: 0;
+}
+.heading{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+.heading input{
+ margin-top: 6px;
+ height: 40px;
+}
+.scrollable   {
+ height: 50px;
+ overflow: auto;
+}

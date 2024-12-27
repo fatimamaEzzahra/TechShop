@@ -1,0 +1,97 @@
+.bond1{
+ background-color: rgb(255, 36, 36);
+ border-radius: 15px;
+ position: relative;
+ z-index: 1;
+ height: 250px;
+ width: 80%;
+ margin: 50px;
+ margin-left: 10%;
+ display: flex;
+ justify-content: space-between;
+}
+.bond1-side{
+  margin-left: 10%;
+  color: #f0ffff;
+  font-family: system-ui;
+  font-weight: 500;
+
+}
+.bond1-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 10%;
+}
+.bond1-right{
+ margin-top: 10px;
+ width: 30%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ gap: 6px;
+}
+.bond1-right p{
+ font-size: 14px;
+}
+.bond1-right button {
+ background-color: #fff;
+ color: rgb(255, 36, 36) ;
+ width: 70px;
+ border-radius: 13px ;
+ padding: 2px;
+ margin-top: 20px;
+ width: 100px;
+}
+.bond1-right button:hover {
+ background-color: rgb(255, 94, 94) ;
+ color: white;
+}
+.bond1-left h4{
+
+ font-weight: 500;
+ font-size: 60px;
+ font-family: "Lalezar", system-ui;
+}
+
+.headphone-bond{
+ display: flex;
+ justify-content: center;
+ z-index: 2;
+ height: 110%;
+ position: absolute;
+ top: -50px;
+ left: 30%;
+ filter: drop-shadow(
+  5px
+  15px
+  15px
+  black
+ );
+}
+@media screen and (max-width:900px) {
+ .bond1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90%;
+  width: 78%;
+ }
+ .headphone-bond{
+  position: absolute;
+  top: 30px;
+  left: 70%;
+  height: 240px;
+ }
+ .bond1-left {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+ }
+ .bond1-right{
+  margin-bottom: 14px;
+  width: 50%;
+ }
+ 
+}

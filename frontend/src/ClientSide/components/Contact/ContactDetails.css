@@ -1,0 +1,43 @@
+body{
+ width: 100%;
+ margin: 0;
+}
+.details{
+ gap: 50px;
+ justify-content: space-around;
+ padding-top: 70px;
+ margin-top: 90px;
+}
+.detail{
+ padding: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border: 2px solid black;
+ border-radius: 10px;
+}
+.detail:hover{
+ color: aliceblue;
+ height: 100%;
+ border: none;
+ background: rgb(24,50,216);
+ background: linear-gradient(90deg, rgba(24,50,216,1) 0%, rgba(198,45,150,1) 0%, rgba(103,82,232,1) 100%);
+ transform: translateY(-15px) ;
+ transition: transform 0.5s ease;
+}
+@media screen and (max-width:900px) {
+ .details{
+  flex-direction: column;
+  width: 40%;
+ padding-left: 50px;
+ }
+ .detail{
+  width:100%;
+ }
+}
+@media screen and  (max-width:501px) {
+ .details{
+  width: 90%;
+ }
+}

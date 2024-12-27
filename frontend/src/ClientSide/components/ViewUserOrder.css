@@ -1,0 +1,70 @@
+.commande-container{
+ grid-area: main;
+ width: 100%;
+ overflow-y: auto;
+ color: black;
+}
+.commande-header{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ margin: 20px;
+ font-weight: 300;
+ font-family: "Lato", sans-serif;
+ 
+}
+.cards{
+ display: flex;
+justify-content: center;
+}
+.card-info{
+ width: 400px;
+ margin: 30px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info-client p{
+ display: flex;
+ justify-content: space-around;
+}
+.card-info h4{
+ border: none;
+background-color: cadetblue;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
+ color: white;
+ display: flex;
+ justify-content: center;
+}
+
+.info-data{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.products-order h3{
+ display: flex;
+ justify-content: center;
+background-color: aquamarine;
+ /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(6, 144, 213)0%, rgba(57, 152, 234) 100%);; */
+ color: white;
+}
+@media screen and (max-width:750px) {
+.cards{
+ display: flex;
+ flex-direction: column;
+}
+ 
+}
+.status{
+ display: flex;
+ gap: 20px;
+}
+.select-status{
+ width: 15% !important;
+}
+.print-btn{
+ display: flex;
+ gap: 20px;
+ justify-content: space-around;
+}

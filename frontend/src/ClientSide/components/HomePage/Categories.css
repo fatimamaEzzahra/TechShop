@@ -1,0 +1,212 @@
+/* .categories{
+ width: 90%;
+} */
+/* .category-item{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 90%;
+ border-radius: 10px;
+ justify-content: center;
+ padding: 10px 10px 20px 20px;
+} */
+.content{
+ margin: 40px;
+}
+.title-main{
+ display: flex;
+ justify-content: start;
+ font-size: small;
+ font-weight: 600;
+}
+.categories {
+ width: 90%;
+ margin: 0 auto; /* Center the categories */
+}
+.category-first-row{
+ margin-top: 40px;
+ display: grid;
+ gap: 1px;
+ grid-template-columns: 1fr 0.5fr 0.5fr ;
+}
+.category-item {
+ display: flex;
+ align-items: center; /* Align items to the bottom */
+ width: 90%;
+ height: 200px;
+ border-radius: 10px;
+ padding-left:   20px;
+ padding-right: 20px;
+ position: relative; /* Add relative positioning */
+}
+
+
+#first{
+ background-color: rgb(255, 33, 33);
+ /* margin-left: 20px; */
+}
+.laptop-image{
+ width:250px;
+ position: absolute; 
+ bottom: 8%; 
+ left: 35%;
+ padding-left: 20px;
+ filter: drop-shadow(-6px 30px 30px rgb(36, 36, 36) );
+}
+#second{
+ background-color: rgb(46, 44, 44);
+}
+.smartphone-image{
+ width:130px;
+ position: absolute; 
+ bottom: 0%; 
+ left: 30%;
+ padding-left: 20px;
+ filter: drop-shadow(-6px -30px 30px rgb(74, 74, 74) );
+
+}
+#third{
+ background-color:rgb(57, 152, 234);
+
+}
+.headphone-image{
+ width:130px;
+ position: absolute; 
+ bottom: 20%; 
+ left: 45%;
+ padding-left: 20px;
+ filter: drop-shadow(-6px 30px 13px rgba(42, 42, 42, 0.717) );
+
+}
+.category-second-row{
+ margin-top: 40px;
+ display: grid;
+ /* gap: 10px; */
+ grid-template-columns: 0.5fr 0.5fr 1fr ;
+}
+#fourth{
+ background-color: #ffcf4b;
+}
+.tablet-image{
+ width:180px;
+ position: absolute; 
+ bottom: 0%; 
+ left: 30%;
+ padding-left: 20px;
+ filter: drop-shadow(-20px 17px 10px rgb(50, 50, 50) );
+
+}
+#fifth{
+ background-color: #52d9ba;
+}
+.smartwatch-image{
+ width: 150px; 
+ position: absolute; 
+ bottom: 0%; 
+ left: 32%;
+ padding-left: 20px;
+ filter: drop-shadow(-6px 20px 15px rgb(36, 36, 36) );
+
+}
+#sixth{
+ background-color: #e1e1e1;
+}
+.desktop-image{
+ width:200px;
+ position: absolute; 
+ bottom: 0%; 
+ left: 50%;
+ padding-left: 20px;
+ filter: drop-shadow(-36px -10px 27px rgb(36, 36, 36) );
+
+}
+.category-item img {
+
+ z-index: 0;
+}
+.para{
+ z-index: 2;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-right: 20px;
+ margin-bottom: 30px;
+}
+.para p{
+ color: white;
+ font-size: 15px;
+}
+.para h4{
+ font-size: larger;
+ font-weight: 500;
+ color: white;
+}
+.para h2{
+color: white;
+font-weight: 800;
+font-size: 30px;
+opacity: 0.4;
+}
+.para button{
+ background-color: black;
+ color: aliceblue;
+ border-radius: 20px;
+ margin-top: 20px;
+ width: 100px;
+ height: 30px;
+}
+.para button:hover{
+ background-color: rgb(39, 39, 39);
+}
+@media screen and (max-width:1009px) {
+ .category-item {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column;  */
+ }
+ .category-first-row{
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+ }
+ .category-item  img{
+  position:initial  !important;
+  
+ }
+ .laptop-image{
+  width: 250px;
+
+ }
+ .smartphone-image{
+  width: 190px; 
+  position: absolute; 
+  top: 30%; 
+  left: 25%;
+  padding-left: 20px;
+ }
+
+ .smartwatch-image{
+  width: 140px; 
+  position: absolute; 
+  bottom: 0%; 
+  left:60%;
+ }
+ .category-item {
+  padding-bottom: 0;
+  align-items: end;
+  
+ }
+ .headphone-image{
+  width: 160px;
+  padding-left: 1px;
+ }
+ .category-second-row{
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+ }
+
+}

@@ -1,0 +1,25 @@
+.thanking-container{
+ height: 400vh;
+}
+.thanking{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: rgb(0, 83, 139);
+ font-size:40px;
+ font-weight: 600;
+}
+.thanking-message{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 60px;
+ font-size:25px;
+ font-weight: 600;
+}
+.backhome{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100px;
+}
